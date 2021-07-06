@@ -189,3 +189,17 @@ let otherUsers = ['miguel', 'angel', 'dev'];
 let pictureTitles: Array<string>;
 pictureTitles = ['Sunset', 'Time', 'Landscape'];
 ```
+
+### Tuple
+```ts
+let user: [number, string];
+user = [1, 'devmiguelangel'];
+
+let userInfo: [number, string, boolean];
+userInfo = [2, 'dev', true];
+
+let arrayVar: [number, string][] = [];
+arrayVar.push([1, 'luis']);
+arrayVar.push([2, 'juan']);
+arrayVar.push([3, 'perez']);
+```
