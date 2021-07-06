@@ -88,4 +88,22 @@ userInfo = `
 `;
 ```
 
+### Any
+```ts
+// Tipo explicito
+let idUser: any;
+
+idUser = 1;
+idUser = '123';
+
+console.log('idUser', idUser);
+
+// Tipo inferido
+let otherId;
+otherId = 1;
+otherId = '1';
+
+console.log('otherId', otherId);
+```
+
 
