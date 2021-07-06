@@ -51,14 +51,12 @@ npx tsc --init
 ```
 
 ## Tipado en TypeScript
-### Number
 
+### Number
 ```ts
-// Number
 let phone: number;
 phone = 10;
 
-// Inferido
 let phoneNumber = 56565656;
 
 let hex : number = 0xf00d;
@@ -67,21 +65,15 @@ let octal : number = 0o744;
 ```
 
 ### Boolean
-
 ```ts
-// Boolean
 let isPro: boolean;
 ```
 
 ### String
-
 ```ts
-// String
 let username: string = 'devmiguelangel';
 
-// Template string
 let userInfo: string;
-
 userInfo = `
   User Info: 
   username: ${username}
@@ -90,32 +82,23 @@ userInfo = `
 
 ### Any
 ```ts
-// Tipo explicito
 let idUser: any;
-
 idUser = 1;
 idUser = '123';
 
-console.log('idUser', idUser);
-
-// Tipo inferido
 let otherId;
 otherId = 1;
 otherId = '1';
-
-console.log('otherId', otherId);
 ```
 
 ### Void
 ```ts
-// Tipo explicito
 function showInfo(user: any): any {
   console.log('User Info', user.id, user.username);
 }
 
 showInfo({id: 1, username: 'devmiguelangel'});
 
-// Tipo inferido
 function showFormattedInfo(user: any) {
   console.log('User Info', `
     id: ${user.id}
@@ -125,7 +108,6 @@ function showFormattedInfo(user: any) {
 
 showFormattedInfo({id: 1, username: 'devmiguelangel'});
 
-// Void como tipo de dato en una variable
 let unusable: void;
 unusable = null;
 unusable = undefined;
@@ -133,10 +115,7 @@ unusable = undefined;
 
 ### Never
 ```ts
-// Tipo explicito
 function handleError(code: number, message: string): never {
-  // Process your code
-  // Generate a message
   throw new Error(`${message}. Code: ${code}`)
 }
 
@@ -146,7 +125,6 @@ try {
   // console.log(error);
 }
 
-// Tipo inferido
 function sumNumbers(limit: number): never {
   let sum: number = 0;
 
@@ -173,12 +151,11 @@ otherUndefined = 1;
 
 // Sub tipos
 let albumName: string;
-
 albumName = null;
 albumName = undefined;
 ```
 
-### Object
+### object
 ```ts
 // Type: object
 let user: object;
@@ -190,7 +167,7 @@ user = {
   isPro: true,
 };
 
-// Object vs object (Class JS vs TS type)
+// Object vs object
 const myObj = {
   id: 1,
   username: 'devmiguelangel',
@@ -200,3 +177,15 @@ const myObj = {
 const isInstance = myObj instanceof Object;
 ```
 
+### Array
+```ts
+let users: string[];
+users = ['miguel', 'angel', 'dev'];
+users.push('user');
+users.sort();
+
+let otherUsers = ['miguel', 'angel', 'dev'];
+
+let pictureTitles: Array<string>;
+pictureTitles = ['Sunset', 'Time', 'Landscape'];
+```
