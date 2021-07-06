@@ -203,3 +203,32 @@ arrayVar.push([1, 'luis']);
 arrayVar.push([2, 'juan']);
 arrayVar.push([3, 'perez']);
 ```
+
+### Enum
+```ts
+enum PhotoOrientation {
+  Landscape = 0,
+  Portrait = 1,
+  Square = 2,
+  Panorama = 3,
+};
+
+const landscape: PhotoOrientation = PhotoOrientation.Landscape;
+
+enum PictureOrientation {
+  Landscape = 10,
+  Portrait,
+  Square,
+  Panorama,
+};
+
+enum Country {
+  Bolivia = 'bol',
+  Colombia = 'col',
+  Mexico = 'mex',
+  EEUU = 'usa',
+  Espana = 'esp',
+};
+
+const country: Country = Country.Colombia;
+```
