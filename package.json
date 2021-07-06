@@ -1,0 +1,14 @@
+{
+  "name": "ts-course",
+  "version": "1.0.0",
+  "description": "Curso de TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devmiguelangel",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
