@@ -9,5 +9,5 @@ var otherUndefined = undefined;
 otherUndefined = 1;
 // Sub tipos
 var albumName;
-albumName = null;
-albumName = undefined;
+// albumName = null;
+// albumName = undefined;

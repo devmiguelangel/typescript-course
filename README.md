@@ -178,3 +178,25 @@ albumName = null;
 albumName = undefined;
 ```
 
+### Object
+```ts
+// Type: object
+let user: object;
+user = {};
+
+user = {
+  id: 1,
+  username: 'devmiguelangel',
+  isPro: true,
+};
+
+// Object vs object (Class JS vs TS type)
+const myObj = {
+  id: 1,
+  username: 'devmiguelangel',
+  isPro: true,
+};
+
+const isInstance = myObj instanceof Object;
+```
+
