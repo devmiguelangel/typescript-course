@@ -232,3 +232,31 @@ enum Country {
 
 const country: Country = Country.Colombia;
 ```
+
+### Union de tipos
+```ts
+let idUser: number | string;
+
+function getUsernameById(id: number | string) {
+  return 'devmiguelangel';
+}
+```
+
+### Alias de tipos
+```ts
+type IdUser = number | string;
+type Username = string;
+
+let idUserVar: IdUser;
+
+function getUsernameByIdFn(id: IdUser): Username {
+  return 'devmiguelangel';
+}
+```
+
+### Tipos literales
+```ts
+type SquareSize = '100x100' | '500x500' | '1000x1000';
+let smallPicture: SquareSize = '100x100';
+let mediumPicture: SquareSize = '500x500';
+```
