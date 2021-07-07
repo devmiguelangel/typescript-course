@@ -273,3 +273,20 @@ let message: string = (<string>username).length > 5 ? `Welcome ${username}` : 'U
 message = (username as string).length > 5 ? `Welcome ${username}` : 'Username is too short';
 console.log('Message', message);
 ```
+
+## Funciones
+```ts
+type SquareSize = '100x100' | '500x500' | '1000x1000';
+
+function createPicture(title: string, date: string, size?: SquareSize) {
+  console.log('Create picture:', title, date, size);
+}
+
+let createPic = (title: string, date: string, size?: SquareSize): object => {
+  return {
+    title,
+    date,
+    size,
+  };
+}
+```
