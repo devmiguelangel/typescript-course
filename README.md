@@ -260,3 +260,16 @@ type SquareSize = '100x100' | '500x500' | '1000x1000';
 let smallPicture: SquareSize = '100x100';
 let mediumPicture: SquareSize = '500x500';
 ```
+
+### Assert
+```ts
+// Angle bracket
+let username: any;
+username = 'devmiguelangel';
+
+let message: string = (<string>username).length > 5 ? `Welcome ${username}` : 'Username is too short';
+
+// as Sintaxis
+message = (username as string).length > 5 ? `Welcome ${username}` : 'Username is too short';
+console.log('Message', message);
+```
