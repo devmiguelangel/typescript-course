@@ -1,18 +1,21 @@
 "use strict";
 // Number
-var phone;
+let phone;
 phone = 10;
 // Inferido
-var phoneNumber = 56565656;
-var hex = 0xf00d;
-var binary = 10;
-var octal = 484;
+let phoneNumber = 56565656;
+let hex = 0xf00d;
+let binary = 0b1010;
+let octal = 0o744;
 // Boolean
-var isPro;
+let isPro;
 isPro = false;
 // String
-var username = 'devmiguelangel';
+let username = 'devmiguelangel';
 // Template string
-var userInfo;
-userInfo = "\n  User Info: \n  username: " + username + "\n";
+let userInfo;
+userInfo = `
+  User Info: 
+  username: ${username}
+`;
 console.log('USER INFO => ' + userInfo);

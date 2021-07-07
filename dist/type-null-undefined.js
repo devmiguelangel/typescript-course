@@ -1,13 +1,13 @@
 "use strict";
-var nullVariable;
+let nullVariable;
 // nullVariable = 1;
-var otherVariable = null;
+let otherVariable = null;
 otherVariable = 1;
-var undefinedVar;
+let undefinedVar;
 // undefined = 1;
-var otherUndefined = undefined;
+let otherUndefined = undefined;
 otherUndefined = 1;
 // Sub tipos
-var albumName;
+let albumName;
 // albumName = null;
 // albumName = undefined;

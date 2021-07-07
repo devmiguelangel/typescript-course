@@ -1,13 +1,13 @@
 "use strict";
-var users;
+let users;
 users = ['miguel', 'angel', 'dev'];
 users.push('user');
 users.sort();
 console.log(users);
 console.log('SIZE', users.length);
-var otherUsers = ['miguel', 'angel', 'dev'];
+let otherUsers = ['miguel', 'angel', 'dev'];
 console.log(otherUsers);
-var pictureTitles;
+let pictureTitles;
 pictureTitles = ['Sunset', 'Time', 'Landscape'];
 console.log(pictureTitles);
 console.log(pictureTitles[0]);

@@ -9,9 +9,13 @@ var PhotoOrientation;
 })(PhotoOrientation || (PhotoOrientation = {}));
 ;
 function showPicture(picture) {
-    console.log("\n    [title: " + picture.title + ",\n    date: " + picture.date + "],\n    orientation: " + picture.orientation + ",\n    isPro: " + picture.isPro);
+    console.log(`
+    [title: ${picture.title},
+    date: ${picture.date}],
+    orientation: ${picture.orientation},
+    isPro: ${picture.isPro}`);
 }
-var myPic = {
+let myPic = {
     title: 'My Picture',
     date: '2020-03',
     orientation: PhotoOrientation.Portrait,
